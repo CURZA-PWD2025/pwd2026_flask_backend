@@ -1,10 +1,16 @@
+from dotenv import load_dotenv
 from flask import Flask
+from app.models import db
+from app.config import config
 
+load_dotenv(override = True)
+import os
 def create_app():
     app = Flask(__name__)
-
+    env = os.getenv('FLASK_ENV', 'development')
+    app.config.from_object(config[env])
     @app.route('/')
-    @app.route('/<nombre>')
+    @app.route('/<nombre>')    
     def home(nombre = None):
         if (nombre == None):
             return f' <h1>Hola  desde programacion web dinamica 2026<h1>'
@@ -13,6 +19,6 @@ def create_app():
     @app.route('/saludo')
     def saludo():
         return f'Hola desde programacion web dinamica 2026 saludo'
-    
+    db.init_app(app)
     return app
     
