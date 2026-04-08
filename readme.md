@@ -387,3 +387,7 @@ No hay nota numérica — este TP es una ejercitación. Se va a revisar que 👍
 - El sistema levanta con `docker-compose up --build` sin errores
 
 > Si el sistema no levanta con Docker no se puede revisar el resto. Prueben el flujo completo antes de hacer el push final.
+
+### Flask SQLAlchemy Cheatsheet 📎
+En la raiz de este repo encontraran un archivo `SQLAlchemy_Cheatsheet.pdf` con toda la información de como se pueden crear las tablas, relaciones y restricciones.
+usenlo como referencia para el trabajo que estamos realizando 👍
