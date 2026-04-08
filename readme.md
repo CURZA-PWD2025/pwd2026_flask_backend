@@ -364,7 +364,7 @@ def rol_access(*roles):
 Si no saben por dónde arrancar, este orden les va a ahorrar tiempo:
 
 1. Crear `BaseModel` y luego los modelos: `Rol` → `User` → `Categoria` → `Proveedor` → `Producto` → `MovimientoStock`.
-Pueden crear los modelos como venimos haciendo,sin el BaseModel, esta parte la explico el viernes 09/04/2026.
+Pueden crear los modelos como venimos haciendo, sin el `BaseModel`, esta parte la explico el viernes 10/04/2026.
 2. Correr `flask db init`, `flask db migrate` y `flask db upgrade`. o correr el `firt_step.sh` Verificar las tablas en pgadmin. 
 3. Implementar el módulo `auth` completo. Probar register y login.
 4. Implementar el Blueprint de `categorias` (el más simple). Probar GET, POST, PUT, DELETE con el token.
