@@ -376,7 +376,7 @@ Pueden crear los modelos como venimos haciendo,sin el BaseModel, esta parte la e
 
 ## Cómo se evalúa
 
-No hay nota numérica — este TP es una ejercitación. Se va a revisar que:
+No hay nota numérica — este TP es una ejercitación. Se va a revisar que 👍
 
 - Los cuatro modelos están implementados con sus relaciones correctas
 - Las migraciones están presentes y el esquema se crea con `flask db upgrade`
